@@ -3,8 +3,8 @@ class Solution
 public:
     void setZeroes(vector<vector<int>> &matrix)
     {
-        set<int> reset_row;
-        set<int> reset_col;
+        unordered_set<int> reset_row;
+        unordered_set<int> reset_col;
         for (int i = 0; i < matrix.size(); i++)
         {
             for (int j = 0; j < matrix[0].size(); j++)

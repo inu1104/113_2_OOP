@@ -3,8 +3,7 @@ class Solution
 public:
     int uniquePaths(int m, int n)
     {
-        vector<vector<int>> dp;
-        dp.resize(m);
+        vector<vector<int>> dp(m);
         for (auto it = dp.begin(); it != dp.end(); it++)
             it->resize(n);
 
